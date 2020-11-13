@@ -62,6 +62,14 @@ byte CAROutput::getState(void) {
 	return _outputState;
 }
 
+bool CAROutput::isHigh(void) {
+	return _blinkState == BLINK_STATE_DISABLE && _outputState == HIGH;
+}
+
+bool CAROutput::isBlinking(void) {
+	return _blinkState != BLINK_STATE_DISABLE;
+}
+
 void CAROutput::loop(void) {
 	bool blinkIsDue = false;
 	if(_blinkTimes == 0)
