@@ -43,10 +43,12 @@ void CAROutput::blink(unsigned int p_lowTime, unsigned int p_highTime, unsigned 
 	_lowTime = p_lowTime;
 	_delayTime = p_delayTime;
 	_blinkTimes = p_blinkTimes;
-	_elapsedMillis_sinceLastOutputChange = 0;
 
-	if(_blinkState == BLINK_STATE_DISABLE) {
+	if(p_delayTime > 0) {
+		_elapsedMillis_sinceLastOutputChange = 0;
 		_blinkState = BLINK_STATE_DELAY;
+	} else {
+		_blinkState = BLINK_STATE_BLINK;
 	}
 }
 
