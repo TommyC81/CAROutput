@@ -45,8 +45,6 @@ class CAROutput
 		void blink(unsigned int p_lowTime, unsigned int p_highTime, unsigned int p_delayTime);
 		void blink(unsigned int p_lowTime, unsigned int p_highTime, unsigned int p_delayTime, int p_blinkTimes);
 		byte getState(void);
-		bool isHigh(void);
-		bool isBlinking(void);
 		void loop(void);
 };
 
