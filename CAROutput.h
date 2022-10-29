@@ -1,7 +1,7 @@
 /////////////////////////////////////////////////////////////////
 /*
-  CAROutput.h - Arduino Library to manage digital/analog output.
-  Created by Tommy Carlsson.
+	CAROutput.cpp - Arduino Library to manage digital/analog output.
+	Created by Tommy Carlsson.
 */
 /////////////////////////////////////////////////////////////////
 
